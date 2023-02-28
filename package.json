@@ -1,0 +1,27 @@
+{
+  "name": "cypress-template",
+  "version": "1.0.0",
+  "description": "Cypress based e2e testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vskadorva/cypress-template.git"
+  },
+  "keywords": [
+    "cypress",
+    "template",
+    "e2e"
+  ],
+  "author": "Vitaly Skadorva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vskadorva/cypress-template/issues"
+  },
+  "homepage": "https://github.com/vskadorva/cypress-template#readme",
+  "devDependencies": {
+    "cypress": "^12.7.0"
+  }
+}

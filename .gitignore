@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+
+# dev tools
+.vscode
+.idea
+.DS_Store
+
+# local reports
+mochawesome-report/
+mochawesome.json
+cypress/screenshots
+cypress/videos
+cypress/config/.*.json
+accessibility/
+package-lock.json
+xunit.xml
+cypress/reports
