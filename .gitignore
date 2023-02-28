@@ -16,3 +16,4 @@ accessibility/
 package-lock.json
 xunit.xml
 cypress/reports
+cypress/downloads/
