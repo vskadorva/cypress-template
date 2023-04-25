@@ -1,12 +1,12 @@
 {
   "name": "cypress-template",
   "version": "1.0.0",
-  "description": "Cypress based e2e testing framework",
+  "description": "Cypress-based e2e testing framework",
   "main": "index.js",
   "scripts": {
     "cypress:open:qa": "npx cypress open --env configFile=qa",
-    "test:qa:cms": "npm run scripts:qa || npm run posttest:qa",
-    "pretest:qa:cms": "npm run clean:reports:qa",
+    "test:qa": "npm run scripts:qa || npm run posttest:qa",
+    "pretest:qa": "npm run clean:reports:qa",
     "posttest:qa": "npm run combine-reports:qa && npm run generate-report:qa",
     "scripts:qa": "cypress run --env configFile=qa --spec cypress/e2e/**",
     "combine-reports:qa": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/qa/report.json",

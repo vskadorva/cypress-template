@@ -1,38 +1,41 @@
 # cypress-template
-Cypress based end-to-end testing framework template
+This is a Cypress-based end-to-end testing framework template.
 
-## Getting Started
-System requirements:
-https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
+##System requirements:
+For information on system requirements, see: https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
 
-Install all dependencies:
-
+##Installation
+To install all dependencies, run:
 ```bash
   cd cypress-template
-  # then
   npm install
-  # or
+``` 
+or
+```bash
+  cd cypress-template
   yarn install
 ```
-
-To be able to run an e2e test suite in DEV/QA/Staging environment with html REPORT:
-
+##Usage
+To run an end-to-end test suite, use one of the following commands:
 ```bash
-#to run qa
-npm run test:qa
-#to run dev
+# for Dev environment
 npm run test:dev
-#to run staging
+
+# for QA environment
+npm run test:qa
+
+# for Staging environment
 npm run test:staging
 ```
-
-To be able to run an Accessibility test suite in DEV/QA/Staging environment with html REPORT:
+To run an accessibility test suite, use one of the following commands:
 ```bash
-#to run qa
-npm run cy:accessibility:qa
-#to run dev
-npm run test:accessibility:dev
-#to run staging
+# for Dev environment
+npm run cy:accessibility:dev
+
+# for QA environment
+npm run test:accessibility:qa
+
+# for Staging environment
 npm run test:accessibility:staging
 ```
 
@@ -42,6 +45,8 @@ qa.json, you need to put qa instead of {ENV}
 example: `npx cypress open --env configFile=qa`
 ```bash
 npx cypress open --env configFile={ENV}
-# or
+```
+or
+```bash
 yarn run cypress open --env configFile={ENV}
 ```

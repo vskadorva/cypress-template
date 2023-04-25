@@ -1,20 +1,13 @@
 export const hasOperationName = (req, operationName) => {
-    const { body } = req
-    return (
-        body.hasOwnProperty('operationName') && body.operationName === operationName
-    )
+    return req.body?.operationName === operationName;
 }
 
 // Alias query if operationName matches
 export const aliasQuery = (req, operationName) => {
-    if (hasOperationName(req, operationName)) {
-        req.alias = `gql${operationName}Query`
-    }
+    req.alias = hasOperationName(req, operationName) ? `gql${operationName}Query` : req.alias;
 }
 
 // Alias mutation if operationName matches
 export const aliasMutation = (req, operationName) => {
-    if (hasOperationName(req, operationName)) {
-        req.alias = `gql${operationName}Mutation`
-    }
+    req.alias = hasOperationName(req, operationName) ? `gql${operationName}Mutation` : req.alias;
 }
